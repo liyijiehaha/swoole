@@ -8,7 +8,7 @@
         echo "密码不能为空哦(｡･ω･｡)";exit;
     }
     //链接数据库
-    $con=mysqli_connect('192.168.65.1','root','root','ecshop');
+    $con=mysqli_connect('127.0.0.1','root','123456abc','sw_chat');
     $sql="select * from shop_user where user_name='$user_name'";
     $res=mysqli_query($con,$sql);
     $arr=mysqli_fetch_assoc($res);

@@ -12,7 +12,7 @@ $server->on('message', function($server, $frame) {
     $user_id=$data['user_id'];
     $db_user="root";
     $db_password="root";
-    $dbh =new PDO("mysql:host=192.168.65.1;dbname=sw_chat",$db_user,$db_password);
+    $dbh =new PDO("mysql:host=127.0.0.1;dbname=sw_chat",$db_user,$db_password);
     $db_sql="insert into chat_messages (text,user_id,user_name,create_time) values('{$text}','{$user_id}','{$user_name}','$time')";
     $dbh->exec($db_sql);
     $errcode=$dbh->errorCode();
