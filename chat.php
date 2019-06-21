@@ -30,7 +30,7 @@
 </body>
 </html>
 <script>
-    var ws_server='ws://swoole.1809.com:9502/';
+    var ws_server='ws://1809a0529.gaoxiangdong.com:9502/';
     var ws=new WebSocket(ws_server);
     ws.onopen=function(){
         $('#submit').click(function(){
